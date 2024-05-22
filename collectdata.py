@@ -4,8 +4,7 @@ cap=cv2.VideoCapture(0)
 directory='Image/'
 while True:
     _,frame=cap.read()
-    count = {
-             'a': len(os.listdir(directory+"/A")),
+    count = {'a': len(os.listdir(directory+"/A")),
              'b': len(os.listdir(directory+"/B")),
              'c': len(os.listdir(directory+"/C")),
              'd': len(os.listdir(directory+"/D")),

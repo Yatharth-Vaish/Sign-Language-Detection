@@ -27,7 +27,7 @@ with mp_hands.Hands(
                 # ret, frame = cap.read()
                 frame=cv2.imread('Image/{}/{}.png'.format(action,sequence))
                 # frame=cv2.imread('{}{}.png'.format(action,sequence))
-                
+                # frame=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
                 # Make detections
                 image, results = mediapipe_detection(frame, hands)
@@ -62,3 +62,4 @@ with mp_hands.Hands(
                     
     # cap.release()
     cv2.destroyAllWindows()
+
